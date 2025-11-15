@@ -10,7 +10,7 @@ O jantar dos filósofos modela threads concorrendo por recursos.
 - Garfos → locks
 - Comer → exige dois recursos simultâneos
 
-Cada filósofo alterna entre:
+Cada filósofo alterna entre.
 
 -Pensar
 -Ficar com fome
