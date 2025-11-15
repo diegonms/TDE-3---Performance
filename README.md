@@ -29,10 +29,10 @@ Um deadlock só pode existir quando todas as quatro condições de Coffman estã
 -Espera circular – existe um ciclo fechado de dependências
 
 Ciclo de deadlock: 
-**F0 espera F1
-F1 espera F2
-F2 espera F3
-F3 espera F4
+**F0 espera F1\
+F1 espera F2\
+F2 espera F3\
+F3 espera F4\
 F4 espera F0**
 
 No jantar dos filósofos, é justamente a espera circular que causa o impasse.
