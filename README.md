@@ -1,6 +1,6 @@
 # TDE-3---Performance
 
-# DESCRIÇÃO DO PROBLEMA-
+# DESCRIÇÃO DO PROBLEMA
 
 O Jantar dos Filósofos é um problema clássico de concorrência usado para ilustrar situações onde múltiplos processos competem por recursos compartilhados.
 Os filósofos estão sentados em uma mesa circular com um garfo entre cada par. Para comer, cada filósofo precisa pegar dois garfos: o da esquerda e o da direita.
@@ -13,7 +13,7 @@ Cada filósofo alterna entre:
 
 Sem um controle adequado, todos podem pegar um garfo e esperar eternamente pelo outro, causando um **deadlock **(impasse).
 
-# o que é um **Deadlock-(impasse)**
+# o que é um **Deadlock (impasse)**
 
 Deadlock ocorre quando processos ficam presos esperando recursos que nunca serão liberados.
 Um deadlock só pode existir quando todas as quatro condições de Coffman estão presentes:
@@ -25,7 +25,7 @@ Um deadlock só pode existir quando todas as quatro condições de Coffman estã
 
 No jantar dos filósofos, é justamente a espera circular que causa o impasse.
 
-# **Fome (Starvation)-**
+# **Fome (Starvation)**
 
 Fome ocorre quando um processo nunca progride, mesmo que o sistema continue ativo.
 No contexto deste problema, um filósofo pode ficar muito tempo sem comer se for repetidamente preterido enquanto tenta pegar os garfos.
@@ -35,7 +35,7 @@ Solução do Impasse:
 A solução adotada segue a estratégia de ordem global de recursos:
 Cada filósofo sempre pega primeiro o garfo de menor índice e depois o de maior índice.
 
-# **Funcionalidade-**
+# **Funcionalidade**
 
 Numeramos os garfos de 0 a 4;
 Cada filósofo identifica seus dois garfos;
@@ -79,7 +79,7 @@ Portanto, um filósofo nunca fica esperando por um garfo de índice menor do que
 Isso impede completamente a formação de ciclos de dependência
 **Sem espera circular → não há deadlock**
 
-# **Sobre a Fome (Starvation)-**
+# **Sobre a Fome (Starvation)**
 
 O protocolo evita deadlock, mas não garante completamente ausência de fome.
 No entanto, em implementações reais, esse problema pode ser mitigado com:
@@ -90,10 +90,8 @@ Políticas de agendamento que garantem fairness.
 
 Assim, todos eventualmente comem.
 
-# **Conclusão do problema-**
+# **Conclusão do problema**
 
 Abordamos os conceitos de deadlock e fome;
 Propusemos um protocolo que elimina o impasse;
 Justificamos como o protocolo funciona;
-
-Essa base teórica é essencial para entender os problemas das próximas partes do trabalho: condição de corrida e deadlock em múltiplos locks.
