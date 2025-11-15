@@ -5,6 +5,11 @@
 O Jantar dos Filósofos é um problema clássico de concorrência usado para ilustrar situações onde múltiplos processos competem por recursos compartilhados.
 Os filósofos estão sentados em uma mesa circular com um garfo entre cada par. Para comer, cada filósofo precisa pegar dois garfos: o da esquerda e o da direita.
 
+O jantar dos filósofos modela threads concorrendo por recursos.
+- Filósofos → threads
+- Garfos → locks
+- Comer → exige dois recursos simultâneos
+
 Cada filósofo alterna entre:
 
 -Pensar
