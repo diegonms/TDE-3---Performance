@@ -1,5 +1,8 @@
 # TDE-3---Performance
 
+## Links
+Youtube: https://www.youtube.com/watch?v=3k0s92hhsGw
+
 ## Jantar dos Filósofos
 
 O Jantar dos Filósofos é um problema clássico de concorrência usado para ilustrar situações onde múltiplos processos competem por recursos compartilhados.
